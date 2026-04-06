@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1 class="logo">My Website</h1>
+
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
+
+        <div class="nav" id="nav-menu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="home">
+        <div class="left-side">
+            <img src="./image/image.jpg" alt="hero image">
+        </div>
+
+        <div class="right-side">
+            <h1>Welcome to My Website</h1>
+            <p>This is a Responsive Column In Website design using HTML and CSS. </p>
+            <button>Get Started</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p> &copy; 2026 My Website | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        const toggle = document.getElementById("menu-toggle");
+        const nav = document.getElementById("nav-menu");
+
+        toggle.addEventListener("click", () => {
+            nav.classList.toggle("active");
+        });
+    </script>
+
+</body>
+</html>
