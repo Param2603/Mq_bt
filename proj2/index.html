@@ -13,7 +13,12 @@
     <!-- Navbar -->
      <div class="navbar">
         <h1 class="logo">StockUp</h1>
-        <div class="nav-links">
+
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
+
+        <div class="nav-links" id="nav-menu">
             <a href="#" class="active">Home</a>
             <a href="#">Dashboard</a>
             <a href="#">Analysis</a>
@@ -67,5 +72,15 @@
         <p class="para2">Join thousands of investors using StockUp to make informed decisions</p>
         <button class="btn">Open Deshboard</button>
        </footer>
+
+       <!-- dropmenu -->
+       <script>
+        const toggle = document.getElementById("menu-toggle");
+        const nav = document.getElementById("nav-menu");
+
+        toggle.addEventListener("click", () => {
+            nav.classList.toggle("active");
+            });
+</script>
 </body>
 </html>
