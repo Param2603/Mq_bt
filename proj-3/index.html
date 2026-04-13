@@ -1,12 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Planto UI</title>
 </head>
+
 <body>
-   <!--  -->
+    <header class="navbar">
+        <div class="nav-container">       
+            <div class="logo">
+                <span>🌱 Planto.</span>
+            </div>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Plants Type</a></li>
+                <li><a href="#">More</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <div class="nav-icons">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <i class="fa-solid fa-bars" id="menuToggle"></i>
+            </div>
+        </div>
+    </header>
+ 
+    <section class="hero">     
+        <div class="hero-content">
+            <h1>Breath Natureal</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+            <div class="hero-buttons">
+                <button class="btn-outline">Explore</button>
+
+                <div class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                    <span>Live Demo...</span>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <img src="./images/testimonial.png" alt="">
+                <div>
+                    <h4>alena Patel</h4>
+                    <div class="stars">★★★★★</div>
+                    <p>Lorem ipsum dolor sit amet consectetur...</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-card">
+            <img src="./images/plant_1.png" alt="">
+            <p class="small-text">Trendy House Plant</p>
+            <h3>Calathea plant</h3>
+            <button class="btn-outline">Buy Now</button>
+        </div>
+
+    </section>
+
+
+
+<section class="trendy">
+
+    <h2 class="section-title">Our Trendy plants</h2>
+
+    <div class="trendy-card">
+        <img src="./images/plant_2.png" class="plant-img left">
+
+        <div class="trendy-content">
+            <h3>For Small Decs Ai Plat</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h4>Rs. 599/-</h4>
+
+            <div class="trendy-btns">
+                <button class="btn-outline">Explore</button>
+                <button class="icon-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="trendy-card">
+        <div class="trendy-content">
+            <h3>For Fresh Decs Ai Plat</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h4>Rs. 579/-</h4>
+
+            <div class="trendy-btns">
+                <button class="btn-outline">Explore</button>
+                <button class="icon-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+        </div>
+
+        <img src="./images/plant_3.png" class="plant-img right">
+    </div>
+
+</section>
+
+
+
+<section class="top-selling">
+
+    <h2 class="section-title">Our Top Selling</h2>
+
+    <div class="product-grid">
+
+        <div class="product-card">
+            <img src="./images/plant_1.png">
+            <h3>Calathea plant</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+
+            <div class="product-bottom">
+                <span>Rs. 359/-</span>
+                <button class="icon-btn">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="./images/plant_2.png">
+            <h3>Calathea plant</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+
+            <div class="product-bottom">
+                <span>Rs. 359/-</span>
+                <button class="icon-btn">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="./images/plant_3.png">
+            <h3>Calathea plant</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+
+            <div class="product-bottom">
+                <span>Rs. 359/-</span>
+                <button class="icon-btn">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="./images/plant_4.png">
+            <h3>Calathea plant</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+
+            <div class="product-bottom">
+                <span>Rs. 359/-</span>
+                <button class="icon-btn">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="./images/plant_6.png">
+            <h3>Calathea plant</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+
+            <div class="product-bottom">
+                <span>Rs. 359/-</span>
+                <button class="icon-btn">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="./images/plant_7.png">
+            <h3>Calathea plant</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+
+            <div class="product-bottom">
+                <span>Rs. 359/-</span>
+                <button class="icon-btn">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- footer  -->
+<footer class="footer">
+
+    <div class="footer-container">
+
+    
+        <div class="footer-left">
+            <h2>🌱 Planto.</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+
+            <div class="socials">
+                <span>FB</span>
+                <span>TW</span>
+                <span>LI</span>
+            </div>
+        </div>
+
+     
+        <div class="footer-links">
+            <h3>Quick Link’s</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Type’s Of plant’s</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-subscribe">
+            <h3>For Every Update.</h3>
+
+            <div class="subscribe-box">
+                <input type="email" placeholder="Enter Email">
+                <button>SUBSCRIBE</button>
+            </div>
+
+            <p class="copyright">planto © all right reserve</p>
+        </div>
+
+    </div>
+
+</footer>
+
+    <script>
+        const menuToggle = document.getElementById("menuToggle");
+        const navLinks = document.getElementById("navLinks");
+
+        menuToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
 </body>
 </html>
