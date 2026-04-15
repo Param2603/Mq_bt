@@ -1,253 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-
-    <title>Planto UI</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TravelWorld</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-    <header class="navbar">
-        <div class="nav-container">       
-            <div class="logo">
-                <span>🌱 Planto.</span>
-            </div>
 
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Plants Type</a></li>
-                <li><a href="#">More</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">&#9992; TravelWorld</div>
 
-            <div class="nav-icons">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <i class="fa-solid fa-bag-shopping"></i>
-                <i class="fa-solid fa-bars" id="menuToggle"></i>
-            </div>
-        </div>
-    </header>
- 
-    <section class="hero">     
-        <div class="hero-content">
-            <h1>Breath Natureal</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">&#9776;</label>
 
-            <div class="hero-buttons">
-                <button class="btn-outline">Explore</button>
-
-                <div class="play-btn">
-                    <i class="fa-solid fa-play"></i>
-                    <span>Live Demo...</span>
-                </div>
-            </div>
-
-            <div class="testimonial">
-                <img src="./images/testimonial.png" alt="">
-                <div>
-                    <h4>alena Patel</h4>
-                    <div class="stars">★★★★★</div>
-                    <p>Lorem ipsum dolor sit amet consectetur...</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="hero-card">
-            <img src="./images/plant_1.png" alt="">
-            <p class="small-text">Trendy House Plant</p>
-            <h3>Calathea plant</h3>
-            <button class="btn-outline">Buy Now</button>
-        </div>
-
-    </section>
-
-
-
-<section class="trendy">
-
-    <h2 class="section-title">Our Trendy plants</h2>
-
-    <div class="trendy-card">
-        <img src="./images/plant_2.png" class="plant-img left">
-
-        <div class="trendy-content">
-            <h3>For Small Decs Ai Plat</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <h4>Rs. 599/-</h4>
-
-            <div class="trendy-btns">
-                <button class="btn-outline">Explore</button>
-                <button class="icon-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-            </div>
-        </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#packages">Packages</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#" class="btn-book">Book Now</a></li>
+      </ul>
     </div>
+  </nav>
 
-    
-    <div class="trendy-card">
-        <div class="trendy-content">
-            <h3>For Fresh Decs Ai Plat</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <h4>Rs. 579/-</h4>
-
-            <div class="trendy-btns">
-                <button class="btn-outline">Explore</button>
-                <button class="icon-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-            </div>
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-tag">Discover the World</p>
+      <h1>Travel Beyond<br/>Your Dreams</h1>
+      <p class="hero-desc">
+        Explore amazing destinations, create unforgettable memories,
+        and experience the world like never before.
+      </p>
+      <div class="hero-buttons">
+        <a href="#destinations" class="btn-primary">Explore Now</a>
+        <a href="#packages" class="btn-secondary">View Packages</a>
+      </div>
+      
+      <div class="hero-stats">
+        <div class="stat">
+          <h3>120+</h3>
+          <p>Destinations</p>
         </div>
 
-        <img src="./images/plant_3.png" class="plant-img right">
+        <div class="stat">
+          <h3>5000+</h3>
+          <p>Happy Travelers</p>
+        </div>
+
+        <div class="stat">
+          <h3>10+</h3>
+          <p>Years Experience</p>
+        </div>
+      </div>
     </div>
+  </section>
 
-</section>
-
-
-
-<section class="top-selling">
-
-    <h2 class="section-title">Our Top Selling</h2>
-
-    <div class="product-grid">
-
-        <div class="product-card">
-            <img src="./images/plant_1.png">
-            <h3>Calathea plant</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-
-            <div class="product-bottom">
-                <span>Rs. 359/-</span>
-                <button class="icon-btn">
-                    <i class="fa-solid fa-bag-shopping"></i>
-                </button>
-            </div>
+  <section class="destinations" id="destinations">
+    <div class="section-container">
+      <h2>Popular Destinations</h2>
+      <p class="section-sub">Hand-picked places loved by our travelers</p>
+      <div class="card-grid">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400&q=80" alt="Paris" />
+          <div class="card-info">
+            <h3>Paris, France</h3>
+            <p>The city of love and lights</p>
+            <span class="price">From $999</span>
+          </div>
         </div>
 
-        <div class="product-card">
-            <img src="./images/plant_2.png">
-            <h3>Calathea plant</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-
-            <div class="product-bottom">
-                <span>Rs. 359/-</span>
-                <button class="icon-btn">
-                    <i class="fa-solid fa-bag-shopping"></i>
-                </button>
-            </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=400&q=80" alt="Kyoto" />
+          <div class="card-info">
+            <h3>Kyoto, Japan</h3>
+            <p>Ancient temples and culture</p>
+            <span class="price">From $1,299</span>
+          </div>
         </div>
 
-        <div class="product-card">
-            <img src="./images/plant_3.png">
-            <h3>Calathea plant</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-
-            <div class="product-bottom">
-                <span>Rs. 359/-</span>
-                <button class="icon-btn">
-                    <i class="fa-solid fa-bag-shopping"></i>
-                </button>
-            </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=400&q=80" alt="Santorini" />
+          <div class="card-info">
+            <h3>Santorini, Greece</h3>
+            <p>Blue domes and sunsets</p>
+            <span class="price">From $1,199</span>
+          </div>
         </div>
 
-        <div class="product-card">
-            <img src="./images/plant_4.png">
-            <h3>Calathea plant</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-
-            <div class="product-bottom">
-                <span>Rs. 359/-</span>
-                <button class="icon-btn">
-                    <i class="fa-solid fa-bag-shopping"></i>
-                </button>
-            </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1518391846015-55a9cc003b25?w=400&q=80" alt="Maldives" />
+          <div class="card-info">
+            <h3>Maldives</h3>
+            <p>Crystal clear paradise</p>
+            <span class="price">From $1,799</span>
+          </div>
         </div>
 
-        <div class="product-card">
-            <img src="./images/plant_6.png">
-            <h3>Calathea plant</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-
-            <div class="product-bottom">
-                <span>Rs. 359/-</span>
-                <button class="icon-btn">
-                    <i class="fa-solid fa-bag-shopping"></i>
-                </button>
-            </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?w=400&q=80" alt="Machu Picchu" />
+          <div class="card-info">
+            <h3>Machu Picchu, Peru</h3>
+            <p>Lost city of the Incas</p>
+            <span class="price">From $1,099</span>
+          </div>
         </div>
 
-        <div class="product-card">
-            <img src="./images/plant_7.png">
-            <h3>Calathea plant</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-
-            <div class="product-bottom">
-                <span>Rs. 359/-</span>
-                <button class="icon-btn">
-                    <i class="fa-solid fa-bag-shopping"></i>
-                </button>
-            </div>
+        <div class="card">
+          <img src="https://s3.amazonaws.com/cdn.micato.com/wp-content/uploads/2020/10/07195819/private-africa-header-01-2048x782.jpg" alt="Kenya" />
+          <div class="card-info">
+            <h3>Safari, Kenya</h3>
+            <p>Wild adventures await</p>
+            <span class="price">From $2,199</span>
+          </div>
         </div>
-
+      </div>
     </div>
+  </section>
 
-</section>
-
-<!-- footer  -->
-<footer class="footer">
-
+  <!-- FOOTER -->
+  <footer class="footer" id="contact">
     <div class="footer-container">
+      <div class="footer-col">
+        <h3>&#9992; TravelWorld</h3>
+        <p>Making travel dreams come true since 2015. Your adventure starts here.</p>
+      </div>
 
-    
-        <div class="footer-left">
-            <h2>🌱 Planto.</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#packages">Packages</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
 
-            <div class="socials">
-                <span>FB</span>
-                <span>TW</span>
-                <span>LI</span>
-            </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul>
+          <li>&#128231; hello@travelworld.com</li>
+          <li>&#128222; +1 (800) 123-4567</li>
+          <li>&#128205; New York, USA</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <p>Subscribe for travel deals and tips.</p>
+        <div class="newsletter">
+          <input type="email" placeholder="Your email" />
+          <button>Go</button>
         </div>
-
-     
-        <div class="footer-links">
-            <h3>Quick Link’s</h3>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Type’s Of plant’s</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Privacy</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-subscribe">
-            <h3>For Every Update.</h3>
-
-            <div class="subscribe-box">
-                <input type="email" placeholder="Enter Email">
-                <button>SUBSCRIBE</button>
-            </div>
-
-            <p class="copyright">planto © all right reserve</p>
-        </div>
-
+      </div>
     </div>
 
-</footer>
-
-    <script>
-        const menuToggle = document.getElementById("menuToggle");
-        const navLinks = document.getElementById("navLinks");
-
-        menuToggle.addEventListener("click", () => {
-            navLinks.classList.toggle("active");
-        });
-    </script>
+    <div class="footer-bottom">
+      <p>&#169; 2026 TravelWorld. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
